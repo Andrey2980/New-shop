@@ -6,28 +6,42 @@
 	<meta charset="utf-8">
 	<title> Личный сайт </title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="reset.css">
 	<meta name="viewport" content= "width=device-width, initial-scale=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
 	integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
 	crossorigin="anonymous">
-    <!-- <script type = "text/javascript"></script> -->
-
-</head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,
+  400;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    
 
 <body>
 
+                                              <!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__controls">
+        <img class="header__logo" src="./img/head/logo.svg" alt="logo" width="44" height="38">
+        <img src="./img/head/loupe.svg" alt="loupe" width="26" height="27">
+      </div>
+      <div class="header__controls">
+        <button class="header__button">
+          <img src="./img/head/burger.svg" alt="burger" width="26" height="27">
+        </button>
+        
+        <a class="header__person-link" href="#"><img src="./img/head/person.svg" alt="figure" width="26" height="27"></a>
+        <a href="#"><img src="./img/head/korzina.svg" alt="korzina" width="26" height="27"></a>
+      </div>
+    </div>
+  </div>
 
-<header>
-   <!-- лого, заголовок, корзина, контакты -->
-   Logo-img
-   loop-img
-   <button>
-       menu-img
-   </button>
-   <a href="#">person-img</a>
-   <a href="#">cart-img</a>
-   <nav>menu
+                                          <!-- NAV -->
+
+  <nav class="header__navigation">
+    menu
        <ul>
            <li>
                <h2>man</h2>
@@ -55,86 +69,212 @@
    </nav>
 </header>
 
-                                 <!-- основной блок -->
+                                 <!-- advertisement -->
 <main>
    
-<section>
-    man-img
-    <h1>the brand of luxeorus section</h1>
-   
+<section class="brand">
+    <img class="header__logo" src="./img/brand/brandman.png" alt="brandman" width="800" height="765">
+    <div class="brand__title-wrapper">
+      <h1 class="brand__title">The brand <span class="brand__subtitle">of luxerious <span class="brand__subtitle brand__subtitle--pink">fashion</span></span></h1>
+    </div>
 </section>
 
-<section>
+<section class="offers container">
+    <h2 class="visually-hidden">Offers</h2>
 
-    <h2>action ofers</h2>
-    <ul>
-        <li>
-            <h3>30%</h3>
-            <p>woman</p>
-        </li>
-
-        <li>
-            <h3>30%</h3>
-            <p>men</p>
-        </li>
-
-        <li>
-            <h3>30%</h3>
-            <p>woman</p>
-        </li>
-
-        <li>
-            <h3>30%</h3>
-            <p>men</p>
-        </li>
-    </ul>
-
-</section>
-
-<section>
-
-    <h2>Featured items</h2>
-    <p>Shop</p>
-    <ul>
-        <li>
-            img
-            <h3>ellery X M O</h3>
-            <p>know</p>
-            <p>$52</p>
-        </li>
-
-        <li>
-            img
-            <h3>ellery X M O</h3>
-            <p>know</p>
-            <p>$52</p>
-        </li>
+    <ul class="offers__list">
         
-        <li>
-            img
-            <h3>ellery X M O</h3>
-            <p>know</p>
-            <p>$52</p>
+          <li class="offers__item offers__item--woman">
+            <div class="offers__wrapper">
+              <h3 class="offers__item--text">30% off</h3>
+              <h2 class="offers__item--description">for woman</h2>
+            </div>
+          </li>
+       
+
+        <li class="offers__item offers__item--man">
+          <div class="offers__wrapper">
+            <h3 class="offers__item--text">hot deal</h3>
+            <h2 class="offers__item--description">for men</h2>
+          </div>
         </li>
-        <li>
-            img
-            <h3>ellery X M O</h3>
-            <p>know</p>
-            <p>$52</p>
+
+        <li class="offers__item offers__item--kids">
+          <div class="offers__wrapper">
+            <h3 class="offers__item--text">new arrivals</h3>
+            <h2 class="offers__item--description">for kids</h2>
+          </div>
+        </li>
+
+        <li class="offers__item offers__item--accesories">
+          <div class="offers__wrapper">
+            <h3 class="offers__item--text">luxirous & trendy</h3>
+            <h2 class="offers__item--description">accesories</h2>
+          </div>
         </li>
     </ul>
 
 </section>
+
+                                              <!-- PRODUCT -->
+
+<section class="product container">
+
+  <div class="product__header">
+    <h2 class="product__suptitle">Featured items</h2>
+    <p class="product__title">Shop for items based on what we featured in this week</p>
+  </div>
+
+    
+      <ul class="product__list">
+
+        <div class="product__wrapper">
+          <li>
+              <img class="product__img" src="./img/assortment/1.png" alt="product" width="360" height="420">
+              <h3 class="product__brand">ellery X M' O</h3>
+              <p class="product__description">Known for her sculptural takes on traditional tailoring,
+               Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+              <p class="product__price">$52.00</p>
+          </li>
+        </div>
+
+        <div class="product__wrapper">
+          <li>
+              <img class="product__img" src="./img/assortment/2.png" alt="product" width="360" height="420">
+              <h3 class="product__brand">ellery X M' O</h3>
+              <p class="product__description">Known for her sculptural takes on traditional tailoring,
+               Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+              <p class="product__price">$52.00</p>
+          </li>
+        </div>
+
+        <div class="product__wrapper">
+          <li>
+              <img class="product__img" src="./img/assortment/3.png" alt="product" width="360" height="420">
+              <h3 class="product__brand">ellery X M' O</h3>
+              <p class="product__description">Known for her sculptural takes on traditional tailoring,
+               Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+              <p class="product__price">$52.00</p>
+          </li>
+        </div>
+
+        <div class="product__wrapper">
+          <li>
+              <img class="product__img" src="./img/assortment/4.png" alt="product" width="360" height="420">
+              <h3 class="product__brand">ellery X M' O</h3>
+              <p class="product__description">Known for her sculptural takes on traditional tailoring,
+               Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+              <p class="product__price">$52.00</p>
+          </li>
+        </div>
+
+        <div class="product__wrapper">
+          <li>
+              <img class="product__img" src="./img/assortment/5.png" alt="product" width="360" height="420">
+              <h3 class="product__brand">ellery X M' O</h3>
+              <p class="product__description">Known for her sculptural takes on traditional tailoring,
+               Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+              <p class="product__price">$52.00</p>
+          </li>
+        </div>
+
+        <div class="product__wrapper">
+          <li>
+              <img class="aproduct__img" src="./img/assortment/6.png" alt="product" width="360" height="420">
+              <h3 class="product__brand">ellery X M' O</h3>
+              <p class="product__description">Known for her sculptural takes on traditional tailoring,
+               Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+              <p class="product__price">$52.00</p>
+          </li>
+        </div>
+
+        <div class="product__browse">
+          <a class="product__browse--btn" href="#">Browse All Product</a>
+        </div>
+      </ul>
+
+      
+
+</section>   
+
+<section class="logistic">
+
+    <ul class="logistic__list">
+      <div class="logistic__wrapper">
+        <li>
+          <img class="logistic__img" src="./img/logistic/truck.svg" alt="product" width="45" height="32">
+           <h3 class="logistic__header">Free Delivery</h3>
+           <p class="logistic__description">Worldwide delivery on all.
+            Authorit tively morph next-generation innov tion with extensive models.</p>
+        </li>
+      </div>
+
+      <div class="logistic__wrapper">
+        <li>
+          <img class="logistic__img" src="./img/logistic/percent.svg" alt="product" width="45" height="32">
+          <h3 class="logistic__header">Sales & discounts</h3>
+          <p class="logistic__description">Worldwide delivery on all.
+          Authorit tively morph next-generation innov tion with extensive models.</p>
+        </li>
+      </div>
+
+      <div class="logistic__wrapper">
+        <li>
+          <img class="logistic__img" src="./img/logistic/crown.svg" alt="product" width="45" height="32">
+          <h3 class="logistic__header">Quality assurance</h3>
+          <p class="logistic__description">Worldwide delivery on all.
+          Authorit tively morph next-generation innov tion with extensive models.</p>
+        </li>
+      </div>
+    </ul>
+    
+</section>
+
+                                                <!-- subscribe -->
+
+<section class="subscribe">
+  
+
+</section>
+  
 
 </main>
+                                      <!-- FOOTER -->
+<footer class="footer">
 
-<footer>
-    <!-- подвал -->
+  <div class="footer__header">
+    <p class="copyright"> Copyright &copy; 2021 Vasil Ppup </p>
+
+    <ul class="footer__social">
+      <div class="footer__wrapper">
+        <li>
+          <img class="footer__img" src="./img/footer/facebook.svg" alt="footer" width="32" height="32">
+        </li>
+      </div>
+
+      <div class="footer__wrapper">
+        <li>
+          <img class="footer__img" src="./img/footer/insta.svg" alt="footer" width="32" height="32">
+        </li>
+      </div>
+
+      <div class="footer__wrapper">
+        <li>
+          <img class="footer__img" src="./img/footer/point.svg" alt="footer" width="32" height="32">
+        </li>
+      </div>
+
+      <div class="footer__wrapper">
+        <li>
+          <img class="footer__img" src="./img/footer/bird.svg" alt="footer" width="32" height="32">
+        </li>
+      </div>
+
+    </ul>
+
+  </div>
+  
 </footer>
-
-
-                                                <!-- не используем сегодня -->
-
 
 
 </body>

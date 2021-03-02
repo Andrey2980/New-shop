@@ -1,0 +1,322 @@
+
+:root {
+	--dark-blue: #222222;
+	--pink: #fde1f4;
+	--dark-pink: #F16D7F;
+	--brown: #474040;
+	--smoky-white: #FBFBFB;
+}
+
+body {
+	font-family: Lato;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 19px;
+}
+
+.container {
+	width: 1138px;
+	margin: 0 auto;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	border: 0;
+	clip: rect(0 0 0 0);
+}
+
+										/*HEADER*/
+
+.header {
+	background-color: var(--dark-blue);
+}
+
+.header__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 75px;
+}
+
+.header__navigation {
+	display: none;
+}
+
+.header__button {
+	background-color: transparent;
+	border: none;
+	margin-left: 0 34px 0 0;
+}
+
+.header__logo {
+	margin: 0 10px 0 0;
+}
+
+.header__person-link {
+	margin: 0 34px 0 0;
+}
+
+
+									/*advertisement*/
+
+
+.brand {
+	display: flex;
+}
+
+.brand__title {
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 58px;
+	text-transform: uppercase;
+}
+
+.brand__title-wrapper{
+	padding: 91px;
+	flex-grow: 1;
+	background-color:	var(--pink);
+	display: flex;
+	align-items: center;
+}
+
+.brand__subtitle {
+	display: block;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 44px;
+}
+
+.brand__subtitle--pink{
+	color: var(--dark-pink);
+}
+
+.offers__list {
+	margin-top: 64px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.offers__item{
+	color: white;
+	width: 360px;
+	min-height: 260px;
+	background-color: var(--brown);
+	margin: 0 0 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.offers__item--woman {
+	background-image: url(./img/offers/woman.jpg);
+	
+}
+
+.offers__item--man {
+	background-image: url(./img/offers/man.png);
+	
+}
+
+.offers__item--kids {
+	background-image: url(./img/offers/kids.png);
+	
+}
+
+.offers__item--accesories {
+	background-image: url(./img/offers/accesories.png);
+	width: 100%;
+	margin: 0;
+	min-height: 180px;
+}
+
+.offers__item--text{
+	text-transform: uppercase;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 19px;
+}
+
+.offers__item--description {
+	color: var(--dark-pink);
+	text-transform: uppercase;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 29px;
+}
+
+													/*PRODUCT*/
+
+.product__suptitle {
+	margin-top: 94px;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 36px;
+	text-align: center;
+}
+
+.product__title {
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 17px;
+	text-align: center;
+}
+
+.product__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.product__wrapper {
+	max-width: 360px;
+	margin-top: 30px;
+}
+
+.product__brand {
+	text-transform: uppercase;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px;
+	text-align: left;
+}
+
+.product__description {
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 17px;
+	text-align: left;
+
+}
+
+.product__price {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 19px;
+	text-align: left;
+	color: var(--dark-pink);
+}
+
+.product__browse {
+	margin-top: 30px;
+
+}
+
+.product__browse--btn {
+	color: var(--dark-pink);
+	padding: 8px 30px;
+	border: 3px solid var(--dark-pink);
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+	margin-left: 495px;
+	
+}
+
+														/*logistics*/
+
+.logistic {
+	margin-top: 95px;
+	background-color: var(--dark-blue);
+	min-height: 340px;
+	padding-left: 250PX;
+	padding-right: 250PX;
+	
+}
+
+.logistic__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.logistic__wrapper {
+	margin-top: 100px;
+}
+
+.logistic__img  {
+	margin-left: 163PX;
+}
+
+.logistic__header {
+	margin-top: 28px;
+	color: var(--smoky-white);
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+}
+
+.logistic__description {
+	margin-top: 16px;
+	color: var(--smoky-white);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 17px;
+	width: 360px;
+	text-align: center;
+	
+
+}
+
+														/*subscribe*/
+
+.subscribe {
+	background: url(./img/subs/sea.png)center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-height: 448px;
+} 														
+
+
+													/*FOOTER*/
+
+.footer__header {
+	background-color: var(--dark-blue);
+	min-height: 80px;
+	padding-top: 40px;
+}
+
+.copyright {
+	color: var(--smoky-white);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 19px;
+	margin-left: 235px;
+}
+
+.footer__wrapper {
+	margin-top: 10px;
+}
+
+.footer__social {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 200px;
+	margin-left: 1350px;
+}
+
+.footer__img {
+	margin-left: 10px;
+}
+
+
