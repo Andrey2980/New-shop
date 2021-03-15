@@ -1,0 +1,207 @@
+.registration__header {
+	width: 100%;
+	min-height: 148px;
+	background-color: $pink;
+}
+
+.registration__title {
+	position: absolute;
+	margin: 60px 0 0 230px;
+	text-transform: uppercase;
+	color: $dark-pink;
+}
+
+
+.registration__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-grow:1;
+}
+
+.registration__list {
+	margin: 0 auto;
+}
+
+.registration__list--title {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 19px;
+	text-align: left;
+	margin-top: 65px;
+}
+
+.registration__inter--fn,
+.registration__inter--ln{
+	margin-top: 21px;
+}
+
+.registration__inter--male,
+.registration__inter--female{
+	margin-top: 40px;
+}
+
+.registration__inter--wrapper{
+	display: flex;
+}
+
+.registration__input{
+	margin-top: 21px;
+	width: 460px;
+	height: 50px;
+}
+
+.password__content{
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 16px;
+	text-align: left;
+	margin-top: 21px;
+	width: 460px;
+}
+
+.registration__btn{
+	width: 130px;
+	height: 54px;
+	background-color: $dark-pink;
+	border-color: $dark-pink;
+	cursor: pointer;
+	color: $white-space;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 17px;
+	margin-top: 39px;
+	margin-bottom: 95px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+.registration__loyalty--notif{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 60%;
+}
+
+.registration__loyalty--header {
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 29px;
+	text-align: left;
+	text-transform: uppercase;
+	margin-top: 65px;
+}
+
+.registration__loyalty--description {
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 29px;
+	text-align: left;
+	width: 625px;
+	height: 58px;
+	margin-top: 22px;
+
+}
+
+.discounts,
+.shipping,
+.purchase,
+.access,
+.exclusive {
+	margin-top: 15px;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 29px;
+	text-align: left;
+}
+
+.exclusive{
+	margin-bottom: 225px;
+}
+
+input[type="checkbox"]:checked + label, 
+input[type="checkbox"]:not(:checked) + label {
+	display: inline-block;
+	position: relative;
+	padding-left: 28px;
+	line-height: 20px;
+	cursor: pointer;
+	
+}
+
+input[type="checkbox"]:checked, 
+input[type="checkbox"]:not(:checked) {
+    position: absolute;
+    display: none;
+}
+
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid $smoky-white;
+    background-color: $just-white;
+}
+
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid $smoky-white;
+    background-color: $just-white;
+}
+
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before {
+    border-radius: 2px;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after {
+    left: 3px;
+    top: 4px;
+    width: 10px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 4px solid $dark-blue;
+    border-bottom: 4px solid $dark-blue;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+input[type="checkbox"]:not(:checked) + label:after {
+    opacity: 1;
+}
+
+input[type="checkbox"]:checked + label:after {
+    opacity: 0;
+}

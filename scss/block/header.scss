@@ -1,0 +1,28 @@
+.header {
+	background-color: $dark-blue;
+}
+
+.header__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 75px;
+}
+
+.header__navigation {
+	display: none;
+}
+
+.header__button {
+	background-color: transparent;
+	border: none;
+	margin-left: 0 34px 0 0;
+}
+
+.header__logo {
+	margin: 0 10px 0 0;
+}
+
+.header__person-link {
+	margin: 0 34px 0 0;
+}

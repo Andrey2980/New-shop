@@ -1,0 +1,44 @@
+.logistic {
+	margin-top: 95px;
+	background-color: $dark-blue;
+	min-height: 340px;
+	padding-left: 250PX;
+	padding-right: 250PX;
+}
+
+.logistic__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.logistic__wrapper {
+	width: 33.333%;
+	margin-top: 100px;
+}
+
+
+.logistic__img  {
+	width: 100%;
+}
+
+.logistic__header {
+	margin-top: 28px;
+	color: $smoky-white;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+}
+
+.logistic__description {
+	margin-top: 16px;
+	color: $smoky-white;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 17px;
+	width: 360px;
+	text-align: center;
+}
