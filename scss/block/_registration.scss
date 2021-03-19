@@ -1,14 +1,15 @@
 .registration__header {
 	width: 100%;
 	min-height: 148px;
-	background-color: $pink;
+	background-color: #fde1f4;
+	margin-bottom: 65px;
 }
 
 .registration__title {
 	position: absolute;
 	margin: 60px 0 0 230px;
 	text-transform: uppercase;
-	color: $dark-pink;
+	color: #f5546a;
 }
 
 
@@ -23,7 +24,16 @@
 	margin: 0 auto;
 }
 
-.registration__list--title {
+.registration__list--yn {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 19px;
+	text-align: left;
+	margin-top: 65px;
+}
+
+.registration__list--ld {
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 300;
@@ -52,6 +62,11 @@
 	height: 50px;
 }
 
+input[placeholder] {
+	padding-left: 20px;
+}
+	
+
 .password__content{
 	font-size: 13px;
 	font-style: normal;
@@ -65,10 +80,10 @@
 .registration__btn{
 	width: 130px;
 	height: 54px;
-	background-color: $dark-pink;
-	border-color: $dark-pink;
+	background-color: #f5546a;
+	border-color: #f5546a;
 	cursor: pointer;
-	color: $white-space;
+	color: #e7e7e7;
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 400;
@@ -77,6 +92,24 @@
 	margin-bottom: 95px;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+.registration__btn:hover {
+	width: 130px;
+	height: 54px;
+	background-color: #35c9f8;
+	border-color: #35c9f8;
+	cursor: pointer;
+	color: #f70d0d;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 17px;
+	margin-top: 39px;
+	margin-bottom: 95px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: background-color 1s ease;
 }
 
 

@@ -3,13 +3,16 @@
 }
 
 .brand__line{
-	border-left: 12px solid $dark-pink;
+	border-left: 12px solid #f5546a;
 	margin-left: 20px; 
 	padding-left: 10px;
 }
 
 .brand__title {
-	@include font(48px, 58px, 900, normal);
+	font-size: 48px;
+	line-height: 58px;
+	font-weight: 900;
+	font-style: normal;
 	text-transform: uppercase;
 	position: relative;
 	//font-size: 48px;
@@ -20,14 +23,14 @@
 }
 
 .brand__subtitle--pink{
-	color: $dark-pink;
+	color:#f5546a;
 }
 
 
 .brand__title-wrapper{
 	padding: 91px;
 	flex-grow: 1;
-	background-color: $pink;
+	background-color: #fde1f4;
 	display: flex;
 	align-items: center;
 }

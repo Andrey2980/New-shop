@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+      
+<head>
+	<meta charset="utf-8">
+	<title> Личный сайт корзинка </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+	<meta name="viewport" content= "width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+	integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+	crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,
+  400;0,700;0,900;1, 900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+                                            <!-- HEADER -->
+<header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header__controls">
+                <img class="header__logo" src="../img/head/logo.svg" alt="logo" width="44" height="38">
+                <img src="../img/head/loupe.svg" alt="loupe" width="26" height="27">
+            </div>
+            <div class="header__controls">
+                <button class="header__button">
+                    <img src="../img/head/burger.svg" alt="burger" width="26" height="27">
+                </button>
+                <a class="header__person-link" href="#"><img src="../img/head/person.svg" alt="figure" width="26" height="27"></a>
+                <a href="#"><img src="../img/head/korzina.svg" alt="korzina" width="26" height="27"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV -->
+
+    <nav class="header__navigation">
+    menu
+        <ul>
+            <li>
+                <h2>man</h2>
+                <ul>
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="#">link</a></li>
+                    <li><a href="registration.html">registration</a></li>
+                    <li><a href="#">link</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <h2>woman</h2>
+            </li>
+            <li>
+                    <h2>kids</h2>
+                <ul>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- registration -->
+<main>
+    <section class="cart">
+
+            <div class="cart__header">
+                <h2 class="cart__title">Shoping cart</h2>
+            </div>
+            <div class="cart__wrapper">
+                <div class="cart__characteristics--wrapper">
+
+                    <div class="cart__characteristics--first">
+                        <div class="cart__imagery--first">
+                            <img class="cart__img" src="../img/assortment/3.png" alt="cart">
+                        </div>
+
+                        <div class="cart__description--first">
+                            <h3 class="cart__brand">Mango peple t-shirt</h3>
+                            <p class="cart__price">Price: $300</p>
+                            <p class="cart__coloring">Color: Red</p>
+                            <p class="cart__size">Size: XI</p>
+                            <p class="cart__quantity">Quality:
+                                <input class="cart__input--quantity" type="number" name="quantity"
+                                min="1" max="9">
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="cart__characteristics--second">
+                        <div class="cart__imagery--second">
+                            <img class="cart__img" src="../img/assortment/7.png" alt="cart">
+                        </div>
+
+                        <div class="cart__description--second">
+                            <h3 class="cart__brand">Mango peple t-shirt</h3>
+                            <p class="cart__price">Price: $300</p>
+                            <p class="cart__coloring">Color: Red</p>
+                            <p class="cart__size">Size: XI</p>
+                            <p class="cart__quantity">Quality:
+                                <input class="cart__input--quantity" type="number" name="quantity"
+                                min="1" max="9">
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="cart__btn--w">
+                        <button class="cart__btn--clear" type="reset">Clear shoping cart</button>
+                        <button class="cart__btn--continue" type="reset">Continue shopping</button>
+                    </div>
+                </div>
+
+                <div class="cart__form--wrapper">
+                    <fieldset class="cart__form">
+                        <legend class="cart__header--form">Shiping adress</legend>
+
+                            <form class="cart__inter" action="#" method="post">
+                                <input class="cart__input--country" type="country" name="country" placeholder="country">
+                            </form>
+
+                            <form class="cart__inter" action="#" method="post">
+                                <input class="cart__input--town" type="town" name="town" placeholder="town">
+                            </form>
+
+                            <form class="cart__inter" action="#" method="post">
+                                <input class="cart__input--postcode" type="postcode" name="postcode" placeholder="postcode/zip">
+                            </form>
+
+                            <button class="cart__btn" type="submit">Get a quote</button>
+                        </legend>    
+                        <legend class="cart__checkout--wrapper">
+                            <p class="cart__sub--total">sub total $:
+                                <input class="cart__sub--quantity" type="number" name="quantity"
+                                min="1" max="1000">
+                            </p>
+                            <p class="cart__grand--total">grand total $: 
+                                <input class="cart__grand--quantity" type="number" name="quantity"
+                                min="1" max="1000">
+                            </p>
+                            <button class="cart__checkout--btn" type="submit">Get a quote</button>
+                        </legend>
+
+                        
+                    </fieldset>
+                    
+                </div>
+        </div>
+    </section>
+
+                                                        <!-- subscribe -->
+
+    <section class="subscribe">
+        <div class="subscribe__wrapper">
+            <div class="subscribe__inner--logo">
+                <img class="subscribe__img" src="../img/subs/face.jpg" alt="face" width="165" height="165">
+                <h2 class="subscribe__item">“Vestibulum quis porttitor dui!
+                    Quisque viverra nunc mi, a pulvinar purus condimentum“
+                </h2>
+            </div>
+                                                        
+            <div class="subscribe__inter">
+                <h2 class="subscribe__inter--item"><span>Subscribe</span>for our newletter and pronmotion</h2>
+                <form class="subscribe__inter--mail" action="#" method="post">
+                <input class="subscribe__input" type="email" name="name" placeholder="   Enter your Email...">
+                <button class="subscribe__btn" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+                                                    
+    </main>
+                                                    <!-- FOOTER -->
+    <footer class="footer">
+                                                    
+        <div class="footer__header">
+                <p class="copyright"> Copyright &copy; 2021 Vasil Ppup </p>
+            <div class="footer__social">
+                <div class="footer__wrapper">
+                    <img class="footer__img" src="../img/footer/facebook.svg" alt="footer" width="32" height="32">
+                </div>
+                                                        
+                <div class="footer__wrapper">
+                    <img class="footer__img" src="../img/footer/insta.svg" alt="footer" width="32" height="32">
+                </div>
+                                                        
+                <div class="footer__wrapper">
+                    <img class="footer__img" src="../img/footer/point.svg" alt="footer" width="32" height="32">
+                </div>
+                                                        
+                <div class="footer__wrapper">
+                    <img class="footer__img" src="../img/footer/bird.svg" alt="footer" width="32" height="32">
+                </div>
+            </div>
+                                                    
+        </div>
+
+</footer>
+                                                
+                                                
+</body>
+</html>

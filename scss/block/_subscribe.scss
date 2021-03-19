@@ -1,9 +1,10 @@
 .subscribe {
-	background: url(./img/subs/sea.png) center no-repeat;
+	background: url(../img/subs/sea.png) center no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	min-height: 448px;
 	background-color: transparent;
+	
 }
 
 .subscribe__wrapper {
@@ -59,6 +60,7 @@
 	line-height: 40px;
 	text-align: center;
 	text-transform: uppercase;
+	display: block;
 }
 
 .subscribe__inter--mail {
@@ -68,7 +70,6 @@
 	width: 60%;
 	height: 40px;
 	padding: 12px;
-	border: 1px solid $white-space;
 	border-right: 0;
 }
 
@@ -96,6 +97,8 @@
 }
 
 .subscribe__btn:hover {
-	background-color: $pink;
-	border-color: $pink;
+	background-color: $marine-blue;
+	border-color: $marine-blue;
+	color: $blood-red;
+	transition: background-color 1s ease;
 }
