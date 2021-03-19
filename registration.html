@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <!-- Required meta tags -->
+    
+<head>
+	<meta charset="utf-8">
+	<title> Личный сайт регистрация </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+	<meta name="viewport" content= "width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+	integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+	crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,
+  400;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    
+
+<body>
+
+                                              <!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__controls">
+        <img class="header__logo" src="./img/head/logo.svg" alt="logo" width="44" height="38">
+        <img src="./img/head/loupe.svg" alt="loupe" width="26" height="27">
+      </div>
+      <div class="header__controls">
+        <button class="header__button">
+          <img src="./img/head/burger.svg" alt="burger" width="26" height="27">
+        </button>
+        
+        <a class="header__person-link" href="#"><img src="./img/head/person.svg" alt="figure" width="26" height="27"></a>
+        <a href="#"><img src="./img/head/korzina.svg" alt="korzina" width="26" height="27"></a>
+      </div>
+    </div>
+  </div>
+
+                                          <!-- NAV -->
+
+  <nav class="header__navigation">
+    menu
+       <ul>
+           <li>
+               <h2>man</h2>
+               <ul>
+                   <li><a href="#">link</a></li>
+                   <li><a href="#">link</a></li>
+                   <li><a href="#">link</a></li>
+                   <li><a href="#">link</a></li>
+               </ul>
+           </li>
+            
+           <li>
+               <h2>woman</h2>
+           </li>
+           <li>
+               <h2>kids</h2>
+               <ul>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+            </ul>
+           </li>
+       </ul>
+   </nav>
+</header>
+
+                                 <!-- registration -->
+<main>
+<section class="registration">
+
+  <div class="registration__header">
+     <h3 class="registration__title">Registration</h3>
+  </div>
+
+  <div class="registration__wrapper">
+
+    <div class="registration__list">
+
+      <h2 class="registration__list--title">Your Name</h2>
+
+      <form class="registration__inter--fn" action="#" method="post">
+        <input class="registration__input" type="email" name="name" placeholder="  First Name">
+      </form>
+
+      <form class="registration__inter--ln" action="#" method="post">
+        <input class="registration__input" type="email" name="name" placeholder="  Last Name">
+      </form>
+
+      <div class="registration__inter--wrapper">
+        <div>
+          <input class="registration__inter--male" type="radio" id="male" name="interest" value="male" checked>
+          <label for="male">Male</label>
+        </div>
+
+        <div>
+          <input class="registration__inter--female" type="radio" id="female" name="interest" value="female">
+          <label for="female">Female</label>
+        </div>
+      </div>
+
+      <h2 class="registration__list--title">Login details</h2>
+      
+      <form class="registration__inter--mail" action="#" method="post">
+        <input class="registration__input" type="email" name="name" placeholder="  First Name">
+      </form>
+
+      <form class="registration__inter--password" action="#" method="post">
+        <input class="registration__input" type="password" name="name" placeholder="  Last Name">
+      </form>
+
+        <p class="password__content">Please use 8 or more characters, with at least 1 number and a 
+        mixture of uppercase and lowercase letters</p>
+
+        <button class="registration__btn" type="submit">Join Now</button>
+    </div>
+    
+    <div class="registration__loyalty--notif">
+      <h4 class="registration__loyalty--header">Loyality has its perks</h4>
+      <p class="registration__loyalty--description">Get in on the loyalty program where you can 
+      earn points and unlock serious perks.
+      Starting with these as soon as you join:</p>
+      <div class="registration__cb">
+        <input type="checkbox" id="discounts" name="loyality" value="discounts">
+        <label class="discounts" for="discounts">15% off welcome offer</label>
+      </div>
+
+      <div class="registration__cb">
+        <input type="checkbox" id="shipping" name="loyality" value="shipping">
+        <label class="shipping" for="shipping">Free shipping, returns and exchanges on all orders</label>
+      </div>
+
+      <div class="registration__cb">
+        <input type="checkbox" id="purchase" name="loyality" value="purchase">
+        <label class="purchase" for="purchase">$10 off a purchase on your birthday</label>
+      </div>
+
+      <div class="registration__cb">
+        <input type="checkbox" id="access" name="loyality" value="access">
+        <label class="access" for="access">Early access to products</label>
+      </div>
+
+      <div class="registration__cb">
+        <input type="checkbox" id="exclusive" name="loyality" value="exclusive">
+        <label class="exclusive" for="exclusive">Exclusive offers & rewards</label>
+      </div>
+
+    </div>
+  </div>
+ 
+   
+
+</section>
+
+                                                <!-- subscribe -->
+
+<section class="subscribe">
+  
+    <div class="subscribe__wrapper">
+
+      <div class="subscribe__inner--logo">
+        <img class="subscribe__img" src="./img/subs/face.jpg" alt="face" width="165" height="165">
+        <h2 class="subscribe__item">“Vestibulum quis porttitor dui!
+         Quisque viverra nunc mi, a pulvinar purus condimentum“
+        </h2>
+      </div>
+
+      <div class="subscribe__inter">
+        <h2 class="subscribe__inter--item"><span>SUBSCRIBE</span><br> FOR OUR NEWLETTER AND PROMOTION</h2>
+        <form class="subscribe__inter--mail" action="#" method="post">
+          <input class="subscribe__input" type="email" name="name" placeholder="   Enter your Email...">
+          <button class="subscribe__btn" type="submit">Subscribe</button>
+        </form>
+      </div>
+
+    </div>
+
+</section>
+  
+
+</main>
+                                      <!-- FOOTER -->
+<footer class="footer">
+
+  <div class="footer__header">
+    <p class="copyright"> Copyright &copy; 2021 Vasil Ppup </p>
+
+    <div class="footer__social">
+      <div class="footer__wrapper">
+        <img class="footer__img" src="./img/footer/facebook.svg" alt="footer" width="32" height="32">
+      </div>
+
+      <div class="footer__wrapper">
+        <img class="footer__img" src="./img/footer/insta.svg" alt="footer" width="32" height="32">
+      </div>
+
+      <div class="footer__wrapper">
+        <img class="footer__img" src="./img/footer/point.svg" alt="footer" width="32" height="32">
+      </div>
+
+      <div class="footer__wrapper">
+        <img class="footer__img" src="./img/footer/bird.svg" alt="footer" width="32" height="32">
+      </div>
+
+    </div>
+
+  </div>
+  
+</footer>
+
+
+</body>
+
+</html>
