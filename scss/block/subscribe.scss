@@ -1,0 +1,101 @@
+.subscribe {
+	background: url(./img/subs/sea.png) center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-height: 448px;
+	background-color: transparent;
+}
+
+.subscribe__wrapper {
+	display: flex;
+	justify-content: space-between;
+
+	
+}
+
+.subscribe__img {
+	margin-top: 90px;
+	margin-left: 325px;
+	border: 2px solid $dark-pink;
+	border-radius: 50%;
+	position: absolute;
+
+}
+
+
+.subscribe__item {
+	margin-top: 295px;
+	margin-left: 237px;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+	width: 360px;
+}
+
+.subscribe__inter {
+	display: flex;
+	flex-direction:column;
+	justify-content: space-between;
+}
+
+.subscribe__inter--item {
+	margin-top: 150px;
+	margin-right: 230px;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 29px;
+	max-width: 490px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.subscribe__inter--item span {
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 40px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.subscribe__inter--mail {
+	margin-left: 35px;
+	margin-top: 40px;
+	margin-bottom: 100px;
+	width: 60%;
+	height: 40px;
+	padding: 12px;
+	border: 1px solid $white-space;
+	border-right: 0;
+}
+
+.subscribe__input {
+	width: 256px;
+	height: 50px;
+	border-radius: 50px 0 0 50px;
+	border: 1px solid $white-space;
+}
+
+.subscribe__btn {
+	margin-left: -4px;
+	width: 100px;
+	height: 54px;
+	background-color: $dark-pink;
+	border-color: $dark-pink;
+	border-radius: 0 50px 50px 0;
+	cursor: pointer;
+	color: $white-space;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 17px;
+	text-align: center;
+}
+
+.subscribe__btn:hover {
+	background-color: $pink;
+	border-color: $pink;
+}

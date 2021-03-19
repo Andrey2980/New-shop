@@ -1,0 +1,41 @@
+.brand {
+	display: flex;
+}
+
+.brand__line{
+	border-left: 12px solid $dark-pink;
+	margin-left: 20px; 
+	padding-left: 10px;
+}
+
+.brand__title {
+	@include font(48px, 58px, 900, normal);
+	text-transform: uppercase;
+	position: relative;
+	//font-size: 48px;
+	//font-style: normal;
+	//font-weight: 900;
+	//line-height: 58px;
+	
+}
+
+.brand__subtitle--pink{
+	color: $dark-pink;
+}
+
+
+.brand__title-wrapper{
+	padding: 91px;
+	flex-grow: 1;
+	background-color: $pink;
+	display: flex;
+	align-items: center;
+}
+
+.brand__subtitle {
+	display: block;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 44px;
+}
