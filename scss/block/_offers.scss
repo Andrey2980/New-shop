@@ -1,3 +1,7 @@
+.offers {
+	max-width: 1140px;
+}
+
 .offers__list {
 	margin-top: 64px;
 	display: flex;
@@ -19,6 +23,7 @@
 
 .offers__item--woman {
 	background-image: url(../img/offers/woman.jpg);
+	
 }
 
 .offers__item--man {
@@ -29,6 +34,22 @@
 	background-image: url(../img/offers/kids.png);
 }
 
+.offers__item--woman,
+.offers__item--man,
+.offers__item--kids {
+	@include tablet {
+		width: 33.333%;
+		height: auto;
+		margin: 0px -15px 8px 0px;
+		
+	}
+	@include mobile {
+		width: 33.333%;
+		height: auto;
+		margin: 0px -15px 8px 0px;
+		
+	}
+}
 .offers__item--accesories {
 	background-image: url(../img/offers/accesories.png);
 	width: 100%;

@@ -11,6 +11,16 @@
 	display: flex;
 	justify-content: space-between;
 
+	@include tablet {
+		flex-direction: column;
+		
+	}
+	@include mobile {
+		flex-direction: column;
+		
+	}
+
+
 	
 }
 
@@ -20,9 +30,7 @@
 	border: 2px solid $dark-pink;
 	border-radius: 50%;
 	position: absolute;
-
 }
-
 
 .subscribe__item {
 	margin-top: 295px;
@@ -35,25 +43,46 @@
 	width: 360px;
 }
 
+.subscribe__inner-logo {
+	width: 50%;
+
+	@include tablet {
+		width: 100%;
+	}
+	@include mobile {
+		width: 100%;
+	}
+}
+
+
 .subscribe__inter {
 	display: flex;
 	flex-direction:column;
 	justify-content: space-between;
+	width: 50%;
+
+	@include tablet {
+		width: 100%;
+		padding-bottom: 140px;
+	}
+
+	@include mobile {
+		width: 100%;
+		padding-bottom: 140px;
+	}
+
 }
 
-.subscribe__inter--item {
+.subscribe__inter-item {
+	margin: 0 auto;
 	margin-top: 150px;
-	margin-right: 230px;
-	font-size: 24px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 29px;
+	@include font(24px, 29px, 400, normal);
 	max-width: 490px;
 	text-align: center;
 	text-transform: uppercase;
 }
 
-.subscribe__inter--item span {
+.subscribe__inter-item span {
 	font-size: 24px;
 	font-style: normal;
 	font-weight: 700;
@@ -63,21 +92,27 @@
 	display: block;
 }
 
-.subscribe__inter--mail {
-	margin-left: 35px;
-	margin-top: 40px;
-	margin-bottom: 100px;
+.subscribe__inter-mail {
+	margin: 0 auto;
 	width: 60%;
 	height: 40px;
 	padding: 12px;
 	border-right: 0;
 }
 
+.subscribe__input-wrapper {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	min-width: 626px;
+	margin: 0 auto;
+}
+
 .subscribe__input {
-	width: 256px;
 	height: 50px;
 	border-radius: 50px 0 0 50px;
 	border: 1px solid $white-space;
+	min-width:	250px;
 }
 
 .subscribe__btn {
@@ -89,11 +124,9 @@
 	border-radius: 0 50px 50px 0;
 	cursor: pointer;
 	color: $white-space;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 17px;
+	@include font(14px, 17px, 400, normal);
 	text-align: center;
+	
 }
 
 .subscribe__btn:hover {

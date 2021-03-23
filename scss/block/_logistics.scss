@@ -1,44 +1,64 @@
-.logistic {
-	margin-top: 95px;
-	background-color: $dark-blue;
-	min-height: 340px;
-	padding-left: 250PX;
-	padding-right: 250PX;
-}
-
 .logistic__list {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	margin-top: 95px;
+	background-color: $dark-blue;
+	min-height: 340px;
+	padding: 0 250px  0 250px; 
+	
+	@include tablet {
+		flex-direction: column;
+		padding: 0 0 0 0;
+	}
+	@include mobile {
+		flex-direction: column;
+		padding: 0 0 0 0;
+		
+	}
+
 }
 
 .logistic__wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	width: 33.333%;
+	height: 33.333%;
 	margin-top: 100px;
+
+	@include tablet {
+		width: 100%;
+		margin-top: 15%;
+		margin-bottom: 64px;
+	}
+
+	@include mobile {
+		width: 100%;
+		margin-top: 15%;
+		margin-bottom: 64px;
+	}
+	
 }
 
-
 .logistic__img  {
-	width: 100%;
+	margin: 0 auto;
+	
 }
 
 .logistic__header {
-	margin-top: 28px;
+	margin: 0 auto;
 	color: $smoky-white;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 24px;
+	@include font(20px, 24px,  400, normal);
 	text-align: center;
+	margin-top: 15px;
 }
 
 .logistic__description {
 	margin-top: 16px;
 	color: $smoky-white;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 300;
-	line-height: 17px;
+	@include font(14px, 17px,  300, normal);
 	width: 360px;
 	text-align: center;
+	margin: 0 auto;
 }
