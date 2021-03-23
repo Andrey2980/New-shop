@@ -1,0 +1,63 @@
+.assortment__box {
+	background-color: $smoky-white;
+	margin-bottom: 30px;
+}
+
+.assortment__suptitle {
+	margin-top: 94px;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 36px;
+	text-align: center;
+}
+
+.assortment__title {
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 17px;
+	text-align: center;
+}
+
+.assortment__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 30px;
+	width: 100%;
+}
+
+
+.assortment__brand {
+	text-transform: uppercase;
+	@include font(13px, 16px, 400, normal);
+	text-align: left;
+}
+
+.assortment__description {
+	@include font(16px, 19px, 300, normal);
+	text-align: left;
+	max-width: 360px;
+}
+
+.assortment__price {
+	@include font(16px, 19px, 400, normal);
+	text-align: left;
+	color: $dark-pink;
+	margin: 10px 0 14px 22px;
+}
+
+.assortment__browse {
+	margin: 0 auto;
+}
+
+.assortment__browse--btn {
+	@include font(16px, 19px, 400, normal);
+	color: $dark-pink;
+	padding: 8px 30px;
+	border: 3px solid $dark-pink;
+	text-decoration: none;
+	
+	
+}

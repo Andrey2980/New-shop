@@ -29,45 +29,55 @@
         <img src="../img/head/loupe.svg" alt="loupe" width="26" height="27">
       </div>
       <div class="header__controls">
-        <button class="header__button">
+        <button class="header__button" type="button">
           <img src="../img/head/burger.svg" alt="burger" width="26" height="27">
         </button>
-        
-        <a class="header__person-link" href="#"><img src="../img/head/person.svg" alt="figure" width="26" height="27"></a>
-        <a href="#"><img src="../img/head/korzina.svg" alt="korzina" width="26" height="27"></a>
+        <a class="header__person-link" href="registration.html"><img src="../img/head/person.svg" alt="figure" width="26" height="27"></a>
+        <a href="cart.html"><img src="../img/head/korzina.svg" alt="korzina" width="26" height="27"></a>
       </div>
     </div>
+    <nav class="brand__navigation modalwindow">
+      <div class="brand__navigation-menu">
+        <h2 class="brand__menu">menu</h2>
+        <a class="brand__menu-button hide-modal" type="button">
+          <i class="fas fa-times"></i>
+        </a>
+      </div>
+        <ul>
+            <li>
+                <h2 class="navigation__title-man">man</h2>
+                <ul>
+                    <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">Accesories</a></li>
+                    <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">Bags</a></li>
+                    <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">Denim</a></li>
+                    <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">T-Shirts</a></li>
+                </ul>
+            </li>
+              
+            <li>
+                <h2 class="navigation__title-woman">Woman</h2>
+                <ul class="navigation__title-trinkets">
+                  <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">Accesoriesk</a></li>
+                  <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">Jackets & Coats</a></li>
+                  <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">Polos</a></li>
+                  <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">T-Shirts</a></li>
+                  <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">Shirts</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2 class="navigation__title-kids">kids</h2>
+              <ul>
+                <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">Accesoriesk</a></li>
+                <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">Jackets & Coats</a></li>
+                <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">Polos</a></li>
+                <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">T-Shirts</a></li>
+                <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">Shirts</a></li>
+                <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">Bags</a></li>
+              </ul>
+            </li>
+        </ul>
+    </nav>
   </div>
-
-                                          <!-- NAV -->
-
-  <nav class="header__navigation">
-    menu
-       <ul>
-           <li>
-               <h2>man</h2>
-               <ul>
-                   <li><a href="index.html">Main</a></li>
-                   <li><a href="#">link</a></li>
-                   <li><a href="registration.html">link</a></li>
-                   <li><a href="#">link</a></li>
-               </ul>
-           </li>
-            
-           <li>
-               <h2>woman</h2>
-           </li>
-           <li>
-               <h2>kids</h2>
-               <ul>
-                <li><a href="#">link</a></li>
-                <li><a href="#">link</a></li>
-                <li><a href="#">link</a></li>
-                <li><a href="#">link</a></li>
-            </ul>
-           </li>
-       </ul>
-   </nav>
 </header>
 
                                  <!-- registration -->
@@ -212,7 +222,8 @@
   
 </footer>
 
-
+<script src="modal.js"></script>
+<!--<script src="modal.js"></script>-->      
 </body>
 
 </html>

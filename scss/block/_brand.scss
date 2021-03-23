@@ -1,0 +1,148 @@
+.brand {
+	display: flex;
+	margin: 0 0 63px;
+}
+
+.brand__img {
+	width: 50%;
+	height: auto;
+
+	@include tablet {
+		width: 385px;
+		height: 369px;
+	}
+	@include mobile {
+		display: none;
+		
+	}
+}
+
+
+.brand__title {
+	margin-left: 74px;
+	@include font(48px, 58px, 900);
+	text-transform: uppercase;
+	position: relative;
+
+	@include tablet{
+		@include font(44px, 53px);
+	}
+
+	@include mobile {
+		margin-top: 150px;
+		height: 369px;
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		width: 4px;
+		height: 100%;
+		background-color: $dark-pink;
+		left: -20px;
+
+		@include mobile {
+			margin-top: 10px;
+			height: 98px;
+		}
+		
+
+	}
+}
+
+.brand__line,
+.brand__title {
+	width: 100%;
+}
+
+.brand__subtitle--pink{
+	color:#f5546a;
+}
+
+.brand__title-wrapper{
+	flex-grow: 1;
+	background-color: #fde1f4;
+	display: flex;
+	align-items: center;
+}
+
+.brand__subtitle {
+	display: block;
+	@include font (32px, 44px, 700, normal);
+		
+	@include tablet{
+		@include font(24px, 28px);
+	}
+}
+
+.brand__navigation-menu {
+	display: flex;
+}
+
+.brand__navigation {
+	display: none;
+	z-index: 3;
+	width: 232px;
+	height: 765px;
+	background-color: #fff;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 17px;
+	margin-left: 405px;
+
+    @include tablet{
+		margin-left: -103px;
+	}
+
+	@include mobile {
+		margin-left: -103px;
+	}
+	
+
+}
+
+.brand__menu {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 17px;
+	margin-left: 35px;
+    margin-top: 35px;
+}
+
+.brand__menu-button{
+	margin-left: 120px;
+	margin-top: 34px;
+	background-color: $just-white;
+	border-color: $just-white;
+	box-shadow: none;
+	color: $dark-blue;
+	z-index: 3;
+	cursor: pointer;
+}
+
+.navigation__title-trinkets {
+	text-decoration: none;
+	color: $light-grey;
+}
+.navigation__title-trinkets:hover {
+	color: $dark-pink;
+	
+}
+
+.navigation__title-man,
+.navigation__title-woman,
+.navigation__title-kids{
+	margin-top: 20px;
+	margin-left: 35px;
+	color: $dark-pink;
+}
+
+.navigation__title-list {
+	margin-left: 45px;
+	margin-top: 20px;
+	
+}

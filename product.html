@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+ 
+    
+<head>
+	<meta charset="utf-8">
+	<title> Личный сайт слайдер </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <meta name="viewport" content= "width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+	integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+	crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,
+  400; 0, 700; 0, 900; 1, 900&display=swap" rel="stylesheet">
+</head>
+    
+
+<body>
+
+                                              <!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__controls">
+        <img class="header__logo" src="../img/head/logo.svg" alt="logo" width="44" height="38">
+        <img src="../img/head/loupe.svg" alt="loupe" width="26" height="27">
+      </div>
+      <div class="header__controls">
+        <button class="header__button" type="button">
+          <img src="../img/head/burger.svg" alt="burger" width="26" height="27">
+        </button>
+        
+        <a class="header__person-link" href="registration.html"><img src="../img/head/person.svg" alt="figure" width="26" height="27"></a>
+        <a href="cart.html"><img src="../img/head/korzina.svg" alt="korzina" width="26" height="27"></a>
+      </div>
+    </div>
+    <nav class="brand__navigation modalwindow">
+      <div class="brand__navigation-menu">
+        <h2 class="brand__menu">menu</h2>
+        <a class="brand__menu-button hide-modal" type="button">
+          <i class="fas fa-times"></i>
+        </a>
+      </div>
+        <ul>
+            <li>
+                <h2 class="navigation__title-man">man</h2>
+                <ul>
+                    <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">Accesories</a></li>
+                    <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">Bags</a></li>
+                    <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">Denim</a></li>
+                    <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">T-Shirts</a></li>
+                </ul>
+            </li>
+              
+            <li>
+                <h2 class="navigation__title-woman">Woman</h2>
+                <ul class="navigation__title-trinkets">
+                  <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">Accesoriesk</a></li>
+                  <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">Jackets & Coats</a></li>
+                  <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">Polos</a></li>
+                  <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">T-Shirts</a></li>
+                  <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">Shirts</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2 class="navigation__title-kids">kids</h2>
+              <ul>
+                <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">Accesoriesk</a></li>
+                <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">Jackets & Coats</a></li>
+                <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">Polos</a></li>
+                <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">T-Shirts</a></li>
+                <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">Shirts</a></li>
+                <li class="navigation__title-list"><a class="navigation__title-trinkets" href="#">Bags</a></li>
+              </ul>
+            </li>
+        </ul>
+    </nav>
+  </div>
+</header>
+                                       
+                                 <!-- product -->
+<main>
+  <section class="product">
+      <div class="product__wrapper">
+          <div class="product__header">
+              <h2 class="product__title">New arrivals</h2>
+              <div class="product__title--links">
+                  <a class="product__title-link-home" href="index.html">Home</a>
+                  <p class="product__title-link-separator"></p>
+                  <a class="product__title-link-section" href="#">men</a>
+                  <p class="product__title-link-separator"></p>
+                  <a class="product__title-link-arrivals" href="#">New arrivals</a>
+              </div>
+          </div>
+      </div>
+  </section>
+                                              <!--Slider-->
+  <section class="section section--gray">
+      <div class="reviews__section">
+          <div class="reviews">
+              <div data-slider>
+                  <div>
+                      <div class="reviews__item">
+                          <img class="reviews__photo" src="../img/assortment/8.png" alt="photo" width="560" height="724">
+                      </div>
+                  </div>
+                  <div>
+                      <div class="reviews__item">
+                          <img class="reviews__photo" src="../img/assortment/5.png" alt="photo" width="560" height="724">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="add">
+    <div class="add__wrapper">
+      <h2 class="add__header">Women collection</h2>
+      <p class="add__header--separator"></p>
+      <h2 class="add__title">Moschino cheap and chic</h2>
+      <p class="add__description">Compellingly actualize fully
+      researched processes before proactive outsourcing.
+      Progressively syndicate collaborative architectures
+      before cutting-edge services. Completely visualize
+      parallel core competencies rather than exceptional portals.</p>
+      <h2 class="add__summ">$561</h2>
+      <p class="add__summ--separator"></p>
+      <div class="add__choose--wrapper">
+        <div class="add__choise--color">Choose color
+          <p class="add__choise--tf"></p>
+          <p class="add__choise--ts"></p>
+        </div>
+        <div class="add__choise--size">Choose size
+          <p class="add__choise--tf"></p>
+          <p class="add__choise--ts"></p>
+        </div>
+        <div class="add__choise--quantity">Quantity
+          <p class="add__choise--tf"></p>
+          <p class="add__choise--ts"></p>
+        </div>
+      </div>
+      <a class="add__browse--btn" href="#" type="button"><i class="fas fa-cart-arrow-down"></i> Add to Cart</a>
+    </div>
+  </section>
+
+    
+  <section class="assortment">
+      <ul class="assortment__container">
+        <li class="assortment__box">
+            <img class="assortment__img" src="../img/assortment/1.png" alt="assortment" width="360" height="420">
+            <h3 class="assortment__brand">ellery X M' O</h3>
+            <p class="assortment__description">Known for her sculptural takes on traditional tailoring,
+            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            <p class="assortment__price">$52.00</p>
+        </li>
+
+        <li class="assortment__box">
+            <img class="assortment__img" src="../img/assortment/2.png" alt="assortment" width="360" height="420">
+            <h3 class="assortment__brand">ellery X M' O</h3>
+            <p class="assortment__description">Known for her sculptural takes on traditional tailoring,
+            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            <p class="assortment__price">$52.00</p>
+        </li>
+
+        <li class="assortment__box">
+            <img class="assortment__img" src="../img/assortment/3.png" alt="assortment" width="360" height="420">
+            <h3 class="assortment__brand">ellery X M' O</h3>
+            <p class="assortment__description">Known for her sculptural takes on traditional tailoring,
+            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            <p class="assortment__price">$52.00</p>
+        </li>
+      </ul>
+  </section>
+
+                                                  <!-- subscribe -->
+
+  <section class="subscribe">
+
+      <div class="subscribe__wrapper">
+
+        <div class="subscribe__inner--logo">
+          <img class="subscribe__img" src="./img/subs/face.jpg" alt="face" width="165" height="165">
+          <h3 class="subscribe__item">“Vestibulum quis porttitor dui!
+          Quisque viverra nunc mi, a pulvinar purus condimentum“
+          </h3>
+        </div>
+
+        <div class="subscribe__inter">
+          <h3 class="subscribe__inter--item"><span>Subscribe</span>for our newletter and pronmotion</h3>
+          <form class="subscribe__inter--mail" action="#" method="post">
+            <input class="subscribe__input" type="email" name="name" placeholder="   Enter your Email...">
+            <button class="subscribe__btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+
+      </div>
+
+  </section>
+</main>
+                                      <!-- FOOTER -->
+<footer class="footer">
+
+  <div class="footer__header">
+    <p class="copyright"> Copyright &copy; 2021 Vasil Ppup </p>
+
+    <div class="footer__social">
+      <div class="footer__wrapper">
+        <img class="footer__img" src="./img/footer/facebook.svg" alt="footer" width="32" height="32">
+      </div>
+
+      <div class="footer__wrapper">
+        <img class="footer__img" src="./img/footer/insta.svg" alt="footer" width="32" height="32">
+      </div>
+
+      <div class="footer__wrapper">
+        <img class="footer__img" src="./img/footer/point.svg" alt="footer" width="32" height="32">
+      </div>
+
+      <div class="footer__wrapper">
+        <img class="footer__img" src="./img/footer/bird.svg" alt="footer" width="32" height="32">
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<!--<script src="modal.js"></script>-->      
+
+</body>
+
+</html>
