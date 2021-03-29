@@ -90,10 +90,12 @@
 	font-style: normal;
 	font-weight: 700;
 	line-height: 17px;
-	margin-left: 405px;
+	margin-left: 274px;
+	position: absolute;
 
     @include tablet{
-		margin-left: -103px;
+		margin-left: 135px;
+    	margin-top: 394px;
 	}
 
 	@include mobile {
